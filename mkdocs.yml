@@ -3,7 +3,7 @@
 site_name: Learning and Teaching
 site_description: A comprehensive guide to understanding teaching and learning concepts
 site_author: Education Course
-site_url: ""
+site_url: https://praveen-hari.github.io/learning-and-teaching/
 
 # Theme Configuration
 theme:

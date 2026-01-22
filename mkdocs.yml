@@ -1,0 +1,92 @@
+# MkDocs Configuration for Learning and Teaching Course
+
+site_name: Learning and Teaching
+site_description: A comprehensive guide to understanding teaching and learning concepts
+site_author: Education Course
+site_url: ""
+
+# Theme Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/school
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Unit 1 - Teaching & Learning:
+    - Overview: unit1-teaching-learning.md
+  - Unit 2 - Diverse Classrooms:
+    - Overview: unit2-diverse-classrooms.md
+  - Unit 3 - Constructivism:
+    - Overview: unit3-constructivism-learner-centered.md
+  - Unit 4 - Models of Teaching:
+    - Overview: unit4-models-of-teaching.md
+  - Unit 5 - Teaching Profession:
+    - Overview: unit5-teaching-profession.md
+
+# Markdown Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+# Plugins
+plugins:
+  - search
+  - tags
+
+# Extra CSS/JS if needed
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+  generator: false
+
+# Copyright
+copyright: Copyright &copy; 2025 - Learning and Teaching Course
